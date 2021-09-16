@@ -4,17 +4,17 @@
 
 **1.**
 > <h3>Clone This Project</h3>
-    open powershell
+> **open powershell**
     > git clone https://github.com/intrercode/jsplus20.git
 
 **2.**
 > <h3>go into root directory</h3>
-    in powershell
+> **in powershell**
     > cd jsPlus20
 
 **3.**
 > <h3>install dependencies</h3>
-    install node.js first
+> **install node.js first**
     > npm install
 
 **4.** 
