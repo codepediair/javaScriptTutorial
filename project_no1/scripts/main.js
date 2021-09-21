@@ -1,6 +1,6 @@
 // DOM Elements
 const time = document.getElementById('time'),
-  greeting = document.getElementById('clock'),
+  clock = document.getElementById('clock'),
   name = document.getElementById('name'),
   focus = document.getElementById('focus');
 
@@ -30,7 +30,7 @@ function showTime() {
 
 // Add Zeros
 function addZero(n) {
-  return (parseInt(n, 10) < 10 ? '0' : '') + n;
+  return (parseInt(n,10) < 10 ? '0' : '') + n;
 }
 
 // Set Background and Greeting
@@ -41,15 +41,15 @@ function setBgGreet() {
   if (hour < 12) {
     // Morning
     document.body.style.backgroundImage = "url('https://images.freeimages.com/images/large-previews/279/morning-view-1217724.jpg')";
-    greeting.textContent = 'صبح به خیر، ';
+    clock.textContent = 'صبح به خیر، ';
   } else if (hour < 18) {
     // Afternoon
     document.body.style.backgroundImage = "url('https://images.freeimages.com/images/large-previews/7b7/key-largo-afternoon-1363409.jpg')";
-    greeting.textContent = 'بعد از ظهر خوش، ';
+    clock.textContent = 'بعد از ظهر خوش، ';
   } else {
     // Evening
     document.body.style.backgroundImage = "url('https://images.freeimages.com/images/large-previews/80b/night-in-sinai-2-1553005.jpg')";
-    greeting.textContent = 'شب به خیر، ';
+    clock.textContent = 'شب به خیر، ';
     document.body.style.color = 'white';
   }
 }
